@@ -12,6 +12,19 @@ It is known to support these printers:
 * Brother DCP-7055
 * Brother DCP-7065DN
 
+Installation
+---------
+
+Make sure you have ghostscript installed on your system.
+```
+./autogen.sh
+./configure
+make
+make install
+```
+
+Make install will require superuser permissions.
+
 Copyright
 ---------
 
