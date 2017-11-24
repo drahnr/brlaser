@@ -30,6 +30,6 @@ rpmbuild \
 -ba SPECS/${name}.spec || exit 1
 
 mkdir -p $(pwd)/${1}/{,s}rpm/
-rm -vf ${RPMBUILD_DIR}/RPMS/noarch/${name}-*debug*.rpm
-cp -vf ${RPMBUILD_DIR}/RPMS/noarch/${name}-*.rpm $(pwd)/${1}/rpm/
+rm -vf ${RPMBUILD_DIR}/RPMS/x86_64/${name}-*debug*.rpm
+cp -vf ${RPMBUILD_DIR}/RPMS/x86_64/${name}-*.rpm $(pwd)/${1}/rpm/
 cp -vf ${RPMBUILD_DIR}/SRPMS/${name}-*.src.rpm $(pwd)/${1}/srpm/

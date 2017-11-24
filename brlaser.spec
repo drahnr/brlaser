@@ -5,7 +5,9 @@ Summary:        Printer for shitty fucked up brother printer
 
 License:        GPL-2.0
 URL:            https://github.com/drahnr/%{name}
-Source0:        https://github.com/drahnr/%{name}/releases/tag/v%{version}.tar.gz
+#Source0:        https://github.com/drahnr/%{name}/releases/tag/v%{version}.tar.gz
+Source0:        brlaser.tar.xz
+
 
 BuildRequires:  cups-devel
 Requires:       cups
