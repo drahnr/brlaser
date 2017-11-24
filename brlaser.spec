@@ -15,11 +15,11 @@ Requires:       cups
 %description
 A actually working printer driver for Brother DCP-7065DN
 
-%prep -n brlaser #-%{version}
+%prep -n brlaser
 cd brlaser-%{version}
-%autosetup -n brlaser-%{version} -D
+%autosetup -n brlaser -D
 
-%build -n brlaser-%{version}
+%build -n brlaser
 ./autogen.sh
 %configure
 %make_build
