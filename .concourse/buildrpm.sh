@@ -17,7 +17,7 @@ cp -v ${name}*.tar.xz ${RPMBUILD_DIR}/SOURCES/
 
 cd ${RPMBUILD_DIR}
 
-dnf install 'dnf-command(builddep)'
+dnf install -y 'dnf-command(builddep)'
 dnf builddep -y SPECS/${name}.spec
 
 rpmbuild \
