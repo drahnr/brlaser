@@ -16,6 +16,9 @@ git archive --format=tar --prefix=${name}/ HEAD | xz > ${name}.tar.xz
 cp -v ${name}*.tar.xz ${RPMBUILD_DIR}/SOURCES/
 
 cd ${RPMBUILD_DIR}
+
+dnf builddep -y SPECS/${name}.spec
+
 rpmbuild \
 --define "_topdir %(pwd)" \
 --define "_builddir %{_topdir}/BUILD" \
