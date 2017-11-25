@@ -5,7 +5,6 @@ Summary:        Printer for shitty fucked up brother printer
 
 License:        GPL-2.0
 URL:            https://github.com/drahnr/%{name}
-#Source0:        https://github.com/drahnr/%{name}/releases/tag/v%{version}.tar.gz
 Source0:        brlaser.tar.xz
 
 
@@ -16,7 +15,7 @@ Requires:       cups
 A actually working printer driver for Brother DCP-7065DN
 
 %prep -n brlaser
-cd brlaser #-%{version}
+#cd brlaser #-%{version}
 %autosetup -n brlaser -D
 
 %build -n brlaser
